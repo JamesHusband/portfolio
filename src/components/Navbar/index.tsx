@@ -1,44 +1,43 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./style.scss";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div>
-      <nav id="navbar" className="nav-menu navbar">
-        <ul>
-          <li>
-            <a href="#hero" className="nav-link">
-              <FontAwesomeIcon icon="home" /> <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="nav-link">
-              <FontAwesomeIcon icon="user" /> <span>About</span>
-            </a>
-          </li>
-          <li>
-            <a href="#resume" className="nav-link">
-              <FontAwesomeIcon icon="book" /> <span>Resume</span>
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio" className="nav-link">
-              <FontAwesomeIcon icon="newspaper" /> <span>Portfolio</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="nav-link">
-              <FontAwesomeIcon icon="rss" /> <span>Blog</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="nav-link">
-              <FontAwesomeIcon icon="envelope" /> <span>Contact</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav id="navbar" className="nav-menu navbar">
+      <ul>
+        <li>
+          <Link to="/" className="nav-link">
+            <FontAwesomeIcon icon="home" /> <span>Home</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/about" className="nav-link">
+            <FontAwesomeIcon icon="user" /> <span>About</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/resume" className="nav-link">
+            <FontAwesomeIcon icon="book" /> <span>Resume</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/portfolio" className="nav-link">
+            <FontAwesomeIcon icon="newspaper" /> <span>Portfolio</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/blog" className="nav-link">
+            <FontAwesomeIcon icon="rss" /> <span>Blog</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="nav-link">
+            <FontAwesomeIcon icon="envelope" /> <span>Contact</span>
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
