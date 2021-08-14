@@ -11,6 +11,7 @@ import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import Homepage from "./pages/Homepage";
 registerIcons();
 
 export const App = hot(_App);
@@ -19,9 +20,12 @@ export function _App(): JSX.Element | null {
     <>
       <Router>
         <Header />
+
         <main id="main">
           <Switch>
-            <Route exact path="/"></Route>
+            <Route exact path="/">
+              <Homepage />
+            </Route>
             <Route path="/about">
               <About />
             </Route>

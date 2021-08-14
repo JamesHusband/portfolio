@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useValues, useActions } from "kea";
 import { counterLogic } from "./counterLogic";
-import { Button } from "reactstrap";
+import { Button } from "react-bootstrap";
 
 export const Counter = () => {
   const { count } = useValues(counterLogic);
