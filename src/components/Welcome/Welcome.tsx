@@ -9,7 +9,13 @@ export default function Welcome() {
         I'm a{" "}
         <Typewriter
           options={{
-            strings: ["Full Stack", "React", "Back End", "WordPress"],
+            strings: [
+              "Full Stack",
+              "TypeScript",
+              "React",
+              "Back End",
+              "WordPress",
+            ],
             autoStart: true,
             loop: true,
           }}

@@ -34,6 +34,7 @@
         "@fortawesome/free-brands-svg-icons": "^5.15.2",
         "@fortawesome/free-solid-svg-icons": "^5.15.2",
         "@fortawesome/react-fontawesome": "^0.1.14",
+        "@tailwindcss/typography": "^0.5.15",
         "bootstrap": "^5.0.2",
         "kea": "^2.3.2",
         "react": "^17.0.2",

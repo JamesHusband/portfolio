@@ -6,7 +6,7 @@ export default function About() {
     <Page heading="About" subHeading="lorem ipsum dolor el ta met">
       <Row>
         <Col lg={4}>
-          <Image src="https://via.placeholder.com/489x489" fluid />
+          <Image src="/images/james.JPG" />
         </Col>
         <Col lg={8}>
           <h3>Full Stack Web Developer</h3>
@@ -17,12 +17,9 @@ export default function About() {
             </i>
           </p>
           <p>
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio
-            vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor
-            incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime
-            officiis quidem quia. Sed et consectetur qui quia repellendus itaque
-            neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui
-            repellendus omnis culpa magni laudantium dolores.
+            Hey there! I'm a Full Stack Developer with a strong love for
+            TypeScript, passionate about crafting clean, scalable web
+            applications.
           </p>
         </Col>
       </Row>
