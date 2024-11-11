@@ -1,15 +1,1 @@
-{
-  "/About": "pages/About.js",
-  "/About/About": "pages/About/About.js",
-  "/Blog/Blog": "pages/Blog/Blog.js",
-  "/Blog": "pages/Blog.js",
-  "/Contact/Contact": "pages/Contact/Contact.js",
-  "/Homepage/Homepage": "pages/Homepage/Homepage.js",
-  "/Contact": "pages/Contact.js",
-  "/Homepage": "pages/Homepage.js",
-  "/Portfolio/Portfolio": "pages/Portfolio/Portfolio.js",
-  "/Portfolio": "pages/Portfolio.js",
-  "/Resume/Resume": "pages/Resume/Resume.js",
-  "/Resume": "pages/Resume.js",
-  "/_error": "pages/_error.js"
-}
+{}
