@@ -7,8 +7,11 @@ export interface IHeroScreen {
 
 const HeroScreen: React.FC<IHeroScreen> = ({ children }) => {
   return (
-    <section className="d-flex flex-column justify-content-center align-items-center hero">
-      {children}
+    <section
+      id="hero"
+      className="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div className="hero-container">{children}</div>
     </section>
   );
 };
