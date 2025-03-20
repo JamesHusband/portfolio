@@ -1,5 +1,14 @@
 export { Button } from "./Button/Button";
-export { NavLink } from "./NavLink/NavLink";
 export { Logo } from "./Logo/Logo";
-export { ListItem } from "./ListItem/ListItem";
+export { NavLink } from "./NavLink/NavLink";
 export { Text } from "./Text/Text";
+export { ListItem } from "./ListItem/ListItem";
+export { TabNav } from "./TabNav/TabNav";
+export { TabNavItem } from "./TabNavItem/TabNavItem";
+export { TabContent } from "./TabContent/TabContent";
+export { Chip } from "./Chip/Chip";
+export { ChipList } from "./ChipList/ChipList";
+export { ProjectImage } from "./ProjectImage/ProjectImage";
+export { ProjectTitle } from "./ProjectTitle/ProjectTitle";
+export { ProjectDescription } from "./ProjectDescription/ProjectDescription";
+export { ProjectLinks } from "./ProjectLinks/ProjectLinks";

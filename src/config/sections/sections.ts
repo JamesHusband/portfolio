@@ -1,4 +1,4 @@
-import { Home, About, Experience } from "@APP/sections";
+import { Home, About, Experience, Projects, Contact } from "@APP/sections";
 
 export type Section = {
   id: string;
@@ -21,5 +21,15 @@ export const sections: Section[] = [
     id: "experience",
     name: "Experience",
     component: Experience,
+  },
+  {
+    id: "projects",
+    name: "Projects",
+    component: Projects,
+  },
+  {
+    id: "contact",
+    name: "Contact",
+    component: Contact,
   },
 ];

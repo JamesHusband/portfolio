@@ -1,8 +1,9 @@
 export { NavBar } from "./NavBar/NavBar";
 export { TopBar } from "./TopBar/TopBar";
 export { SectionHead } from "./SectionHead/SectionHead";
-export { Project } from "./Project";
 export { TerminalText } from "./TerminalText/TerminalText";
 export { Hero } from "./Hero/Hero";
-export { CaretList } from "./CaretList/CaretList";
+export { List } from "./List/List";
+export { TabPanel } from "./TabPanel/TabPanel";
 export { FramedImage } from "./FramedImage/FramedImage";
+export { Project } from "./Project/Project";
