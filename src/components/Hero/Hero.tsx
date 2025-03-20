@@ -1,3 +1,4 @@
+import { Text } from "@UI";
 import { TerminalText } from "../TerminalText/TerminalText";
 
 type HeroProps = {
@@ -22,7 +23,7 @@ export function Hero({
       <h2 className="text-[clamp(40px,8vw,60px)] font-bold text-slate leading-none">
         {subheading}
       </h2>
-      <p className="text-slate max-w-[540px]">{description}</p>
+      <Text variant="lead">{description}</Text>
     </div>
   );
 }
