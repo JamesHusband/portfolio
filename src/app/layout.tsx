@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { TopBar } from "@components";
 import { siteMetadata } from "@CONFIG";
 
 import { Inter, Space_Mono } from "next/font/google";
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${spaceMono.variable} bg-navy text-slate min-h-screen pt-nav`}
       >
+        <TopBar />
         <div className="container">{children}</div>
       </body>
     </html>
