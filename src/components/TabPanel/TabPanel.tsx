@@ -1,0 +1,48 @@
+"use client";
+
+import { useState } from "react";
+import { TabNav, TabContent } from "@UI";
+
+type Tab = {
+  id: string;
+  label: string;
+  content: React.ReactNode;
+};
+
+type TabPanelProps = {
+  tabs: Tab[];
+  orientation?: "vertical" | "horizontal";
+  className?: string;
+};
+
+export function TabPanel({
+  tabs,
+  orientation = "vertical",
+  className = "",
+}: TabPanelProps) {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const orientations = {
+    vertical: "flex gap-12",
+    horizontal: "flex flex-col gap-8",
+  };
+
+  return (
+    <div className={`${orientations[orientation]} ${className}`}>
+      <TabNav
+        tabs={tabs}
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
+        orientation={orientation}
+      />
+
+      <div className="flex-1">
+        {tabs.map((tab, index) => (
+          <TabContent key={tab.id} id={tab.id} isSelected={activeTab === index}>
+            {tab.content}
+          </TabContent>
+        ))}
+      </div>
+    </div>
+  );
+}

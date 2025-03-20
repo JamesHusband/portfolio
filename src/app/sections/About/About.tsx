@@ -1,6 +1,6 @@
 "use client";
 
-import { CaretList, FramedImage } from "@components";
+import { List, FramedImage } from "@components";
 import { Text } from "@UI";
 
 const technologies = [
@@ -26,7 +26,7 @@ export function About() {
           Here are a few technologies I&apos;ve been working with recently
         </Text>
 
-        <CaretList items={technologies} />
+        <List items={technologies} />
       </div>
 
       <div className="md:col-span-2 flex justify-center md:justify-end">

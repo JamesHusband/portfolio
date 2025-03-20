@@ -1,12 +1,25 @@
 type ListItemProps = {
   text: string;
+  variant?: "caret" | "bullet";
+  className?: string;
 };
 
-export function ListItem({ text }: ListItemProps) {
+export function ListItem({
+  text,
+  variant = "caret",
+  className = "",
+}: ListItemProps) {
+  const baseStyles = "relative text-slate";
+  const variants = {
+    caret:
+      "flex items-center before:content-['▸'] before:text-yellow-400 before:mr-2",
+    bullet:
+      "pl-7 text-base leading-relaxed before:content-['▹'] before:absolute before:left-0 before:text-yellow",
+  };
+
   return (
-    <div className="flex items-center">
-      <span className="text-yellow-400 mr-2">▸</span>
-      <span className="text-slate-300">{text}</span>
-    </div>
+    <li className={`${baseStyles} ${variants[variant]} ${className}`}>
+      {text}
+    </li>
   );
 }
