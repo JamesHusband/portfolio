@@ -25,7 +25,11 @@ export default function RootLayout({
         className={`${inter.className} ${spaceMono.variable} bg-navy text-slate min-h-screen pt-nav`}
       >
         <TopBar />
-        <div className="container">{children}</div>
+        {children}
+
+        <footer className="w-full text-center py-8 text-text font-mono text-sm">
+          <div>Designed & Built by James Charles</div>
+        </footer>
       </body>
     </html>
   );
