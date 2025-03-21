@@ -1,19 +1,23 @@
-import { sections } from "@config";
-import { SectionHead } from "@ui";
+import { Hero } from "@ui";
+import { PageTransition } from "../lib/utils/PageTransition";
 
-export default function Home() {
+const heroContent = {
+  greeting: "Hello World, my name is...",
+  heading: "James Charles",
+  subheading: "I write code & develop apps.",
+  description:
+    "Drawn to shiny code and complex systems. I love building tools and simplifying the messy into the manageable.",
+};
+
+export default function HomePage() {
   return (
-    <main>
-      {sections.map(({ id, name, isCentered, component: Component }, index) => (
-        <div key={id} id={id}>
-          <section id={id} className="max-w-[900px] mx-auto py-24">
-            {index > 0 && (
-              <SectionHead name={name} index={index} isCentered={isCentered} />
-            )}
-            <Component index={index} />
-          </section>
-        </div>
-      ))}
-    </main>
+    <PageTransition>
+      <section
+        role="region"
+        className="min-h-[calc(100vh-var(--nav-height))] flex items-center justify-center px-8"
+      >
+        <Hero {...heroContent} />
+      </section>
+    </PageTransition>
   );
 }

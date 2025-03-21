@@ -1,4 +1,8 @@
+"use client";
+
 import { List, Tabs } from "@ui";
+import { SectionHead } from "@ui";
+import { PageTransition } from "../../lib/utils/PageTransition";
 
 type Job = {
   company: string;
@@ -27,7 +31,7 @@ const jobs: Job[] = [
   },
 ];
 
-export function Experience() {
+export default function ExperiencePage() {
   const tabs = jobs.map((job) => ({
     id: job.company.toLowerCase().replace(/\s+/g, "-"),
     label: job.company,
@@ -49,8 +53,13 @@ export function Experience() {
   }));
 
   return (
-    <section className="max-w-[900px] mx-auto py-24">
-      <Tabs tabs={tabs} orientation="vertical" />
-    </section>
+    <PageTransition>
+      <main>
+        <section className="max-w-[900px] mx-auto py-24">
+          <SectionHead name="Experience" index={2} />
+          <Tabs tabs={tabs} orientation="vertical" />
+        </section>
+      </main>
+    </PageTransition>
   );
 }
