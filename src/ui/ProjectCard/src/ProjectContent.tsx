@@ -1,4 +1,4 @@
-import { List } from "@components";
+import { List } from "@ui";
 import { ProjectLinks } from "./ProjectLinks";
 
 type ProjectContentProps = {
@@ -33,7 +33,7 @@ export function ProjectContent({
     >
       <div className="mb-4">
         {featured && (
-          <p className="text-emerald-400 text-sm mb-2">Featured Project</p>
+          <p className="text-yellow-400 text-sm mb-2">Featured Project</p>
         )}
         <h3 className="text-2xl text-slate-light font-semibold">{title}</h3>
       </div>

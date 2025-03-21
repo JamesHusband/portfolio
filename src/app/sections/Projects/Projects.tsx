@@ -1,4 +1,4 @@
-import { ProjectCard } from "@components";
+import { ProjectCard } from "@ui";
 import projects from "../../../data/projects.json";
 
 export function Projects() {

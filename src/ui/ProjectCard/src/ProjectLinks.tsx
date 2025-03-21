@@ -21,7 +21,7 @@ export function ProjectLinks({
           href={links.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-slate-300 hover:text-emerald-400"
+          className="text-slate-300 hover:text-yellow-400"
         >
           <span className="sr-only">GitHub</span>
           <svg
@@ -44,7 +44,7 @@ export function ProjectLinks({
           href={links.external}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-slate-300 hover:text-emerald-400"
+          className="text-slate-300 hover:text-yellow-400"
         >
           <span className="sr-only">External Link</span>
           <svg

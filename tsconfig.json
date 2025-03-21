@@ -19,11 +19,11 @@
       }
     ],
     "paths": {
-      "@CONFIG": ["./src/config"],
+      "@config": ["./src/config"],
       "@APP/*": ["./src/app/*"],
       "@UI": ["./src/lib/ui"],
       "@utils": ["./src/lib/utils"],
-      "@components": ["./src/app/components"],
+      "@ui": ["./src/ui"],
       "@data": ["./src/data/*"],
       "jhdev/*": ["./src/*"]
     }

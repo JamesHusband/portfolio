@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { TopBar } from "@components";
-import { siteMetadata } from "@CONFIG";
+import { Footer, TopBar } from "@ui";
+import { siteMetadata } from "@config";
 
 import { Inter, Space_Mono } from "next/font/google";
 
@@ -22,14 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.className} ${spaceMono.variable} bg-navy text-slate min-h-screen pt-nav`}
+        className={`${inter.className} ${spaceMono.variable} bg-navy pt-nav`}
       >
         <TopBar />
         {children}
-
-        <footer className="w-full text-center py-8 text-text font-mono text-sm">
-          <div>Designed & Built by James Charles</div>
-        </footer>
+        <Footer />
       </body>
     </html>
   );

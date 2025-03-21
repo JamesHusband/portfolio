@@ -1,7 +1,7 @@
 "use client";
 
 import { NavLink } from "./NavLink/NavLink";
-import { sections } from "@CONFIG";
+import { sections } from "@config";
 
 export function NavBar() {
   return (

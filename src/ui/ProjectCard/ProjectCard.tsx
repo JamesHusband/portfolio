@@ -1,7 +1,7 @@
 "use client";
 
-import { ProjectImage } from "./ProjectImage";
-import { ProjectContent } from "./ProjectContent";
+import { ProjectImage } from "./src/ProjectImage";
+import { ProjectContent } from "./src/ProjectContent";
 
 type ProjectCardProps = {
   title: string;

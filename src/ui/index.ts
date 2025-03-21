@@ -1,9 +1,9 @@
-export { NavBar } from "./NavBar/NavBar";
+export { ProjectCard } from "./ProjectCard/ProjectCard";
 export { TopBar } from "./TopBar/TopBar";
 export { SectionHead } from "./SectionHead/SectionHead";
 export { TerminalText } from "./TerminalText/TerminalText";
 export { Hero } from "./Hero/Hero";
 export { List } from "./List/List";
 export { FramedImage } from "./FramedImage/FramedImage";
-export { Tabs } from "./Tabs/Tabs";
-export { ProjectCard } from "./ProjectCard";
+export { Tabs } from "./Tabs";
+export { Footer } from "./Footer/Footer";

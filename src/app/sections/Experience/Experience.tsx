@@ -1,4 +1,4 @@
-import { List, Tabs } from "@components";
+import { List, Tabs } from "@ui";
 
 type Job = {
   company: string;

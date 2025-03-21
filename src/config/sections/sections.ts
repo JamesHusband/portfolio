@@ -4,6 +4,7 @@ export type Section = {
   id: string;
   name: string;
   component: React.ComponentType<{ index: number }>;
+  isCentered?: boolean;
 };
 
 export const sections: Section[] = [
@@ -31,5 +32,6 @@ export const sections: Section[] = [
     id: "contact",
     name: "Contact",
     component: Contact,
+    isCentered: true,
   },
 ];

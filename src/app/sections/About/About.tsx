@@ -1,6 +1,6 @@
 "use client";
 
-import { List, FramedImage } from "@components";
+import { List, FramedImage } from "@ui";
 import { Text } from "@UI";
 
 const technologies = [

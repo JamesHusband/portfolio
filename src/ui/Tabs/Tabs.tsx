@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { TabNav } from "./TabNav";
-import { TabContent } from "./TabContent";
+import { TabNav } from "./src/TabNav";
+import { TabContent } from "./src/TabContent";
 
 type Tab = {
   id: string;

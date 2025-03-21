@@ -1,19 +1,16 @@
-import { sections } from "@CONFIG";
-import { SectionHead } from "@components";
+import { sections } from "@config";
+import { SectionHead } from "@ui";
+
 export default function Home() {
   return (
     <main>
-      {sections.map((section, index) => (
-        <div key={section.id} id={section.id}>
-          <section id={section.id} className="max-w-[900px] mx-auto py-24">
+      {sections.map(({ id, name, isCentered, component: Component }, index) => (
+        <div key={id} id={id}>
+          <section id={id} className="max-w-[900px] mx-auto py-24">
             {index > 0 && (
-              <SectionHead
-                name={section.name}
-                index={index}
-                isContact={section.id === "contact"}
-              />
+              <SectionHead name={name} index={index} isCentered={isCentered} />
             )}
-            <section.component index={index} />
+            <Component index={index} />
           </section>
         </div>
       ))}

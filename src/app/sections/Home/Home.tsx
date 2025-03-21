@@ -1,4 +1,4 @@
-import { Hero } from "@components";
+import { Hero } from "@ui";
 
 const heroContent = {
   greeting: "Hello World, my name is...",
