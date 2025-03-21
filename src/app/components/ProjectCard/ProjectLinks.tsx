@@ -1,25 +1,24 @@
 type ProjectLinksProps = {
-  github?: string;
-  external?: string;
-  align?: "left" | "right";
+  links: {
+    github?: string;
+    external?: string;
+  };
+  position: "left" | "right";
   className?: string;
 };
 
 export function ProjectLinks({
-  github,
-  external,
-  align = "left",
+  links,
+  position,
   className = "",
 }: ProjectLinksProps) {
+  const isLeft = position === "left";
+
   return (
-    <div
-      className={`flex gap-4 ${
-        align === "right" ? "justify-end" : ""
-      } ${className}`}
-    >
-      {github && (
+    <div className={`flex gap-4 ${!isLeft ? "justify-end" : ""} ${className}`}>
+      {links.github && (
         <a
-          href={github}
+          href={links.github}
           target="_blank"
           rel="noopener noreferrer"
           className="text-slate-300 hover:text-emerald-400"
@@ -40,9 +39,9 @@ export function ProjectLinks({
           </svg>
         </a>
       )}
-      {external && (
+      {links.external && (
         <a
-          href={external}
+          href={links.external}
           target="_blank"
           rel="noopener noreferrer"
           className="text-slate-300 hover:text-emerald-400"

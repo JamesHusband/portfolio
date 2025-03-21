@@ -1,0 +1,31 @@
+{
+    "projects": [
+    {
+      "title": "Fantakuchen",
+      "description": "A website for showcasing my open source video game projects.",
+      "image": {
+        "src": "/fantakuchen.webp",
+        "alt": "Fantakuchen"
+      },
+      "technologies": ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
+      "links": {
+        "github": "https://github.com/yourusername/fantakuchen",
+        "external": "https://fantakuchen.com"
+      },
+      "featured": true
+    },
+    {
+      "title": "Fantakuchen",
+      "description": "A website for showcasing my open source video game projects.",
+      "image": {
+        "src": "/fantakuchen.webp",
+        "alt": "Fantakuchen"
+      },
+      "technologies": ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
+      "links": {
+        "github": "https://github.com/yourusername/fantakuchen",
+        "external": "https://fantakuchen.com"
+      }
+    }
+  ]
+}

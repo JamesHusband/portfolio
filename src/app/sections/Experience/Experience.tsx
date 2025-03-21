@@ -1,4 +1,4 @@
-import { List, TabPanel } from "@components";
+import { List, Tabs } from "@components";
 
 type Job = {
   company: string;
@@ -50,7 +50,7 @@ export function Experience() {
 
   return (
     <section className="max-w-[900px] mx-auto py-24">
-      <TabPanel tabs={tabs} orientation="vertical" />
+      <Tabs tabs={tabs} orientation="vertical" />
     </section>
   );
 }

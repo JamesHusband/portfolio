@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { NumberPrefix } from "@UI";
 
 type NavLinkProps = {
   index?: number;
@@ -13,9 +14,7 @@ export function NavLink({ index, value }: NavLinkProps) {
       href={`#${value.toLowerCase()}`}
       className="font-mono text-slate hover:text-yellow transition-colors duration-300 flex items-center gap-[5px]"
     >
-      {index !== undefined && (
-        <span className="text-yellow">0{index + 1}.</span>
-      )}
+      {index !== undefined && <NumberPrefix number={index + 1} size="sm" />}
       {value}
     </Link>
   );

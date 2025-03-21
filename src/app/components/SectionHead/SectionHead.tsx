@@ -1,3 +1,5 @@
+import { NumberPrefix } from "@UI";
+
 type SectionHeadProps = {
   name: string;
   index: number;
@@ -5,13 +7,11 @@ type SectionHeadProps = {
 };
 
 export function SectionHead({ name, index, isContact }: SectionHeadProps) {
-  const number = String(index + 1).padStart(2, "0");
-
   if (isContact) {
     return (
       <div className="text-center mb-10">
         <p className="font-mono text-yellow text-lg">
-          {number}. What&apos;s Next?
+          <NumberPrefix number={index + 1} size="lg" /> What&apos;s Next?
         </p>
         <h2 className="text-[clamp(40px,5vw,60px)] font-bold text-slate-light mt-4">
           {name}
@@ -23,7 +23,7 @@ export function SectionHead({ name, index, isContact }: SectionHeadProps) {
   return (
     <div className="flex items-baseline gap-2 mb-10">
       <div className="flex items-baseline gap-2">
-        <span className="font-mono text-yellow text-xl">{number}.</span>
+        <NumberPrefix number={index + 1} size="lg" />
         <h2 className="text-[clamp(26px,5vw,32px)] font-semibold text-slate-light whitespace-nowrap">
           {name}
         </h2>

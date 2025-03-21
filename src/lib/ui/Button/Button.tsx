@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { NumberPrefix } from "@UI";
 
 type ButtonProps = {
   href: string;
@@ -25,12 +26,12 @@ export function Button({
       target={href.includes("http") ? "_blank" : target}
       className={
         isNav
-          ? "font-mono text-[var(--fz-xs)] text-slate hover:text-yellow transition-colors duration-300 flex items-center gap-[5px]"
+          ? "font-mono text-slate hover:text-yellow transition-colors duration-300 flex items-center gap-[5px]"
           : `w-fit font-mono text-yellow border border-yellow rounded px-4 py-2 hover:bg-yellow/10 transition-colors duration-300 ${className}`
       }
     >
       {isNav && index !== undefined && (
-        <span className="text-yellow">0{index + 1}.</span>
+        <NumberPrefix number={index + 1} size="sm" />
       )}
       {value}
     </Link>

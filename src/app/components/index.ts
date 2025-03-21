@@ -4,6 +4,6 @@ export { SectionHead } from "./SectionHead/SectionHead";
 export { TerminalText } from "./TerminalText/TerminalText";
 export { Hero } from "./Hero/Hero";
 export { List } from "./List/List";
-export { TabPanel } from "./TabPanel/TabPanel";
 export { FramedImage } from "./FramedImage/FramedImage";
-export { Project } from "./Project/Project";
+export { Tabs } from "./Tabs/Tabs";
+export { ProjectCard } from "./ProjectCard";

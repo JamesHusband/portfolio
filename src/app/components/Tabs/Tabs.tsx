@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { TabNav, TabContent } from "@UI";
+import { TabNav } from "./TabNav";
+import { TabContent } from "./TabContent";
 
 type Tab = {
   id: string;
@@ -9,17 +10,17 @@ type Tab = {
   content: React.ReactNode;
 };
 
-type TabPanelProps = {
+type TabsProps = {
   tabs: Tab[];
   orientation?: "vertical" | "horizontal";
   className?: string;
 };
 
-export function TabPanel({
+export function Tabs({
   tabs,
   orientation = "vertical",
   className = "",
-}: TabPanelProps) {
+}: TabsProps) {
   const [activeTab, setActiveTab] = useState(0);
 
   const orientations = {

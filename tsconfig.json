@@ -23,7 +23,8 @@
       "@APP/*": ["./src/app/*"],
       "@UI": ["./src/lib/ui"],
       "@utils": ["./src/lib/utils"],
-      "@components": ["./src/components"],
+      "@components": ["./src/app/components"],
+      "@data": ["./src/data/*"],
       "jhdev/*": ["./src/*"]
     }
   },

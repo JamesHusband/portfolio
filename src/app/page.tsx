@@ -1,6 +1,5 @@
 import { sections } from "@CONFIG";
 import { SectionHead } from "@components";
-
 export default function Home() {
   return (
     <main>

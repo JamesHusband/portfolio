@@ -26,7 +26,7 @@ export function About() {
           Here are a few technologies I&apos;ve been working with recently
         </Text>
 
-        <List items={technologies} />
+        <List items={technologies} variant="bullet" layout="flow" />
       </div>
 
       <div className="md:col-span-2 flex justify-center md:justify-end">
