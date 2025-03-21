@@ -15,15 +15,8 @@ export function SectionHead({ name, index, isCentered }: SectionHeadProps) {
     >
       <div className={`${isCentered ? "" : "flex items-baseline gap-2"}`}>
         <NumberPrefix number={index + 1} size="lg" />
-        {isCentered && <span className="ml-2">What&apos;s Next?</span>}
       </div>
-      <h2
-        className={`${
-          isCentered
-            ? "text-[clamp(40px,5vw,60px)] font-bold mt-4"
-            : "text-[clamp(26px,5vw,32px)] font-semibold whitespace-nowrap"
-        } text-slate-light`}
-      >
+      <h2 className="text-[clamp(26px,5vw,32px)] font-semibold whitespace-nowrap text-slate-light">
         {name}
       </h2>
       {!isCentered && (

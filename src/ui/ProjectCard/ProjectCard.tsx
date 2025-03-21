@@ -27,22 +27,19 @@ export function ProjectCard({
   technologies,
   links,
   featured = false,
-  className = "",
   position = "left",
 }: ProjectCardProps) {
   return (
-    <div className={`mb-24 ${className}`}>
-      <div className="relative grid grid-cols-12 gap-4 items-center">
-        <ProjectImage src={image.src} alt={image.alt} position={position} />
-        <ProjectContent
-          title={title}
-          description={description}
-          technologies={technologies}
-          links={links}
-          featured={featured}
-          position={position}
-        />
-      </div>
+    <div className="relative grid grid-cols-12 gap-4 items-center w-full mb-24">
+      <ProjectImage src={image.src} alt={image.alt} position={position} />
+      <ProjectContent
+        title={title}
+        description={description}
+        technologies={technologies}
+        links={links}
+        featured={featured}
+        position={position}
+      />
     </div>
   );
 }

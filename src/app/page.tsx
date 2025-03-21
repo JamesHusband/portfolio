@@ -1,3 +1,5 @@
+"use client";
+
 import { Hero } from "@ui";
 import { PageTransition } from "../lib/utils/PageTransition";
 

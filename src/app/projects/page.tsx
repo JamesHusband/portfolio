@@ -8,18 +8,23 @@ import projects from "../../data/projects.json";
 export default function ProjectsPage() {
   return (
     <PageTransition>
-      <main>
-        <section className="max-w-[900px] mx-auto py-24">
+      <section
+        role="region"
+        className="min-h-[calc(100vh-var(--nav-height))] flex items-center justify-center px-8"
+      >
+        <div className="w-full max-w-[900px] py-24">
           <SectionHead name="Projects" index={3} />
-          {projects.projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              {...project}
-              position={index % 2 === 1 ? "left" : "right"}
-            />
-          ))}
-        </section>
-      </main>
+          <div className="w-full">
+            {projects.projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                {...project}
+                position={index % 2 === 1 ? "left" : "right"}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
     </PageTransition>
   );
 }

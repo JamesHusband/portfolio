@@ -9,7 +9,7 @@ export default function ContactPage() {
     <PageTransition>
       <main>
         <section className="max-w-[900px] mx-auto py-24">
-          <SectionHead name="Contact" index={4} isCentered />
+          <SectionHead name="Contact" index={4} />
           <div className="max-w-[600px] mx-auto flex flex-col items-center">
             <p className="text-slate text-lg leading-relaxed mb-12 md:text-base">
               I&apos;m currently looking for new opportunities. Interest in

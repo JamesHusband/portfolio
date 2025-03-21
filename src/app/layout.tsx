@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.className} ${spaceMono.variable} bg-navy pt-nav`}
+        className={`${inter.className} ${spaceMono.variable} bg-navy pt-nav min-h-screen flex flex-col`}
       >
         <TopBar />
-        {children}
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
