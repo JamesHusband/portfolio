@@ -3,6 +3,8 @@
 import { List, Tabs } from "@ui";
 import { SectionHead } from "@ui";
 import { PageTransition } from "../../lib/utils/PageTransition";
+import jobs from "../../data/jobs.json";
+
 
 type Job = {
   company: string;
@@ -12,27 +14,9 @@ type Job = {
   points: string[];
 };
 
-const jobs: Job[] = [
-  {
-    company: "Little Star Media",
-    title: "Senior Developer",
-    date: "May 2014 - March 2025",
-    points: [
-      "Deliver high-quality, robust production code for a diverse array of projects for fast paced affiliate marketing company",
-    ],
-  },
-  {
-    company: "JH Web Design",
-    title: "Freelance Web Designer",
-    date: "Jan 2012 - March 2024",
-    points: [
-      "Deliver high-quality, robust production code for a diverse array of projects for fast paced affiliate marketing company",
-    ],
-  },
-];
 
-export default function ExperiencePage() {
-  const tabs = jobs.map((job) => ({
+const ExperiencePage = () => {
+  const tabs = jobs.map((job: Job) => ({
     id: job.company.toLowerCase().replace(/\s+/g, "-"),
     label: job.company,
     content: (
@@ -63,3 +47,5 @@ export default function ExperiencePage() {
     </PageTransition>
   );
 }
+
+export default ExperiencePage;

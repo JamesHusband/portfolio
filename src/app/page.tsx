@@ -11,7 +11,7 @@ const heroContent = {
     "Drawn to shiny code and complex systems. I love building tools and simplifying the messy into the manageable.",
 };
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <PageTransition>
       <section
@@ -23,3 +23,5 @@ export default function HomePage() {
     </PageTransition>
   );
 }
+
+export default HomePage;

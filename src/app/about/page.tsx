@@ -4,15 +4,7 @@ import { List, FramedImage } from "@ui";
 import { Text } from "@UI";
 import { SectionHead } from "@ui";
 import { PageTransition } from "../../lib/utils/PageTransition";
-
-const technologies = [
-  "JavaScript (ES6+)",
-  "TypeScript",
-  "React",
-  "Eleventy",
-  "Node.js",
-  "WordPress",
-];
+import persona from "../../data/persona.json";
 
 export default function AboutPage() {
   return (
@@ -32,7 +24,7 @@ export default function AboutPage() {
                 Here are a few technologies I&apos;ve been working with recently
               </Text>
 
-              <List items={technologies} variant="bullet" layout="flow" />
+              <List items={persona.technologies} variant="bullet" layout="flow" />
             </div>
 
             <div className="md:col-span-2 flex justify-center md:justify-end">

@@ -6,5 +6,5 @@ export { Hero } from "./Hero/Hero";
 export { List } from "./List/List";
 export { FramedImage } from "./FramedImage/FramedImage";
 export { Tabs } from "./Tabs";
-export { Footer } from "./Footer/Footer";
+export { Footer } from "./Footer";
 export { Toolbar } from "./Toolbar/Toolbar";

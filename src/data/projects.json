@@ -1,5 +1,4 @@
-{
-    "projects": [
+[
     {
       "title": "Fantakuchen",
       "description": "A website for showcasing my open source video game projects.",
@@ -28,4 +27,3 @@
       }
     }
   ]
-}

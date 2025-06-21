@@ -5,7 +5,7 @@ import { SectionHead } from "@ui";
 import { PageTransition } from "../../lib/utils/PageTransition";
 import projects from "../../data/projects.json";
 
-export default function ProjectsPage() {
+const ProjectsPage = () => {
   return (
     <PageTransition>
       <section
@@ -15,7 +15,7 @@ export default function ProjectsPage() {
         <div className="w-full max-w-[900px] py-24">
           <SectionHead name="Projects" index={3} />
           <div className="w-full">
-            {projects.projects.map((project, index) => (
+            {projects.map((project, index) => (
               <ProjectCard
                 key={index}
                 {...project}
@@ -28,3 +28,5 @@ export default function ProjectsPage() {
     </PageTransition>
   );
 }
+
+export default ProjectsPage;

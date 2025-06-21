@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Footer, TopBar, Toolbar } from "@ui";
+import {  TopBar, Toolbar } from "@ui";
 import { siteMetadata } from "@config";
 
 import { Inter, Space_Mono } from "next/font/google";
@@ -26,7 +26,6 @@ export default function RootLayout({
       >
         <TopBar />
         <main className="flex-1 pb-8">{children}</main>
-        <Footer />
         <Toolbar />
       </body>
     </html>
