@@ -1,29 +1,42 @@
 [
-    {
-      "title": "Fantakuchen",
-      "description": "A website for showcasing my open source video game projects.",
-      "image": {
-        "src": "/fantakuchen.webp",
-        "alt": "Fantakuchen"
-      },
-      "technologies": ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
-      "links": {
-        "github": "https://github.com/yourusername/fantakuchen",
-        "external": "https://fantakuchen.com"
-      },
-      "featured": true
+  {
+    "title": "Dreckly",
+    "description": "A food delivery platform similar to Just Eat.",
+    "image": {
+      "src": "/dreckly.webp",
+      "alt": "Dreckly"
     },
-    {
-      "title": "Fantakuchen",
-      "description": "A website for showcasing my open source video game projects.",
-      "image": {
-        "src": "/fantakuchen.webp",
-        "alt": "Fantakuchen"
-      },
-      "technologies": ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
-      "links": {
-        "github": "https://github.com/yourusername/fantakuchen",
-        "external": "https://fantakuchen.com"
-      }
+    "technologies": ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
+    "links": {
+      "github": "https://github.com/JamesHusband/Dreckly",
+      "external": "https://fantakuchen.com"
     }
-  ]
+  },
+  {
+    "title": "Houston",
+    "description": "An affiliate marketing manager application",
+    "image": {
+      "src": "/houston.webp",
+      "alt": "Fantakuchen"
+    },
+    "technologies": ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
+    "links": {
+      "github": "https://github.com/JamesHusband/Houston",
+      "external": "https://fantakuchen.com"
+    },
+    "featured": true
+  },
+  {
+    "title": "Fantakuchen",
+    "description": "A website for showcasing my open source video game projects.",
+    "image": {
+      "src": "/fantakuchen.webp",
+      "alt": "Fantakuchen"
+    },
+    "technologies": ["VS Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
+    "links": {
+      "github": "https://github.com/yourusername/fantakuchen",
+      "external": "https://fantakuchen.com"
+    }
+  }
+]

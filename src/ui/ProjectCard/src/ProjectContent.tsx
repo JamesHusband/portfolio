@@ -40,14 +40,14 @@ export function ProjectContent({
       <div className="bg-[#112240] p-6 rounded-md mb-4">
         <p className="text-slate-300">{description}</p>
       </div>
-      <List
+      {/* <List
         items={technologies}
         variant="chip"
         layout="flow"
         size="sm"
         align={!isLeft ? "right" : "left"}
         className="mb-6"
-      />
+      /> */}
       <ProjectLinks links={links} position={position} />
     </div>
   );
